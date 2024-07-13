@@ -1,0 +1,19 @@
+SEO and Core Web Vitals
+
+First thing to note is that your content should be good and should be related to the product you are giving to the customer for example if yoou are selling dog food then the content should be about dog food.
+
+CLS (Cumulative Layout Shift) is a Core Web Vital metric that measures the visual stability of a web page. It quantifies how much the layout of a web page shifts during the loading process. Minimizing CLS is crucial for providing a better user experience, as unexpected layout shifts can be disorienting and frustrating for users.
+
+LCP (Largest Contentful Paint) is another Core Web Vital metric that measures the loading performance of a web page. It records the time it takes for the largest content element visible in the viewport (like an image, video, or block-level text element) to become fully visible from when the page starts loading. A fast LCP helps ensure that the page is useful to the user quickly, improving the user experience.
+According to Google's Core Web Vitals guidelines:
+Good LCP: 2.5 seconds or faster.
+Needs Improvement: Between 2.5 seconds and 4.0 seconds.
+Poor LCP: More than 4.0 seconds.
+
+FID (First Input Delay) is a Core Web Vital metric that measures the responsiveness of a web page. It quantifies the time from when a user first interacts with a page (e.g., clicking a link, tapping on a button) to the time when the browser is actually able to begin processing event handlers in response to that interaction. A low FID is crucial for a good user experience, as it means the page is responsive and interactive quickly.
+According to Google's Core Web Vitals guidelines:
+Good FID: 100 milliseconds or faster.
+Needs Improvement: Between 100 milliseconds and 300 milliseconds.
+Poor FID: More than 300 milliseconds.
+
+A Lighthouse Report is a tool provided by Google that helps developers measure the performance, accessibility, best practices, and SEO of a web page. It provides a comprehensive analysis of various metrics and generates a report with suggestions for improvement. To generate a Lighthouse Report, you can use the Lighthouse CLI or the Lighthouse Chrome DevTools extension.A Lighthouse Report is a tool provided by Google that helps developers measure the performance, accessibility, best practices, and SEO of a web page. It provides a comprehensive analysis of various metrics and generates a report with suggestions for improvement. To generate a Lighthouse Report, you can use the Lighthouse CLI or the Lighthouse Chrome DevTools extension.
