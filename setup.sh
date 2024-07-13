@@ -12,7 +12,11 @@ sudo apt install -y mysql-server
 # Install PHP
 sudo apt install -y php libapache2-mod-php php-mysql
 
-echo "LAMP stack installed successfully."
+# Install live-server
+# Access the port usinglive-server --port=8080 --host=localhost --no-browser 
+sudo npm install -g live-server
+
+echo "LAMP stack + live-server installed successfully."
 
 # Define the project root directory
 PROJECT_ROOT="project_name"
