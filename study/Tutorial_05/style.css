@@ -1,0 +1,11 @@
+/* CSS for ID */
+#myId {
+    background-color: blue;
+    font-size: 20px;
+}
+
+/* CSS for Class */
+.myClass {
+    background-color: yellow;
+    padding: 10px;
+}
