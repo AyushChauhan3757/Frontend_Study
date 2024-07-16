@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* .relative: This class uses relative positioning. When an element is assigned this class, it will be positioned relative to its normal position in the document flow. The top and left properties are used to offset the element from its original position. In this case, the element will be moved 50 pixels down and 50 pixels to the right from its original position. The background color of elements with this class will be yellow. */
+        .relative {
+            position: relative;
+            top: 50px;
+            left: 50px;
+            background-color: yellow;
+        }
+
+        /* .absolute: This class uses absolute positioning. When an element is assigned this class, it will be positioned relative to its closest positioned ancestor. If there is no positioned ancestor, it will be positioned relative to the document body. The top and left properties are used to specify the exact position of the element. In this case, the element will be positioned 100 pixels down and 100 pixels to the right. The background color of elements with this class will be red. */
+        .absolute {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            background-color: red;
+        }
+
+        /* .fixed: This class uses fixed positioning. When an element is assigned this class, it will be positioned relative to the browser window, regardless of scrolling. The top and left properties are used to specify the exact position of the element. In this case, the element will be positioned 150 pixels down and 150 pixels to the right. The background color of elements with this class will be blue. */
+        .fixed {
+            position: fixed;
+            top: 150px;
+            left: 150px;
+            background-color: blue;
+        }
+
+        /* .sticky: This class uses sticky positioning. When an element is assigned this class, it will behave like a relatively positioned element until it reaches a specified threshold, and then it will become fixed. The top and left properties are used to specify the exact position of the element. In this case, the element will be positioned 200 pixels down and 200 pixels to the right. The background color of elements with this class will be green. */
+        .sticky {
+            position: sticky;
+            top: 200px;
+            left: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="relative">Relative Position</div>
+    <div class="absolute">Absolute Position</div>
+    <div class="fixed">Fixed Position</div>
+    <div class="sticky">Sticky Position</div>
+</body>
+</html>
