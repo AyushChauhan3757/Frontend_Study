@@ -1,71 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Card Design</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
         body {
-            font-family: Arial, sans-serif; /* Change the font family for all elements */
+            background-color: gray;
+            padding: 45px;
         }
-
         .card {
-            border: 2px solid #333; /* Increase the border width and make it darker */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 300px;
-            border-radius: 5px; /* Make the border more square */
+            background-color: white;
+            width: 335px;
+            height: 494px;
+            border-radius: 7px;
         }
-
-        .card-image {
-            width: 100%;
-            height: auto;
-            border-radius: 5px; /* Make the border more square */
+        .image {
+            padding: 5px;
         }
-
-        .card-tags {
-            margin-top: 10px;
+        .image img {
+            border-radius: 7px;
         }
-
-        .tag {
-            display: inline-block;
-            background-color: transparent;
-            color: #333;
-            padding: 5px 10px;
-            margin-right: 5px;
-            border-radius: 10px;
-            border: 2px solid gray;
+        .capsules {
+            padding: 0 28px 0 14px;
         }
-
-        .card-location {
-            margin-top: 10px;
-            font-size: 18px;
+        .capsules span {
+            border: 1px solid gray;
+            padding: 0px 6px;
+            border-radius: 7px;
+            font-size: 12px;
+            font-family: 'Poppins', sans-serif;
         }
-
-        .card-description {
-            margin-top: 10px;
+        .content {
+            padding: 7px 13px;
+            font-family: "Poppins", sans-serif;
         }
-
-        .read-more {
-            display: block;
-            margin-top: 10px;
-            padding: 5px 10px;
-            background-color: #f2f2f2;
-            color: blue;
-            text-decoration: none;
-            border-radius: 5px;
+        .content h1 {
+ 
+            font-size: 26px;
+            font-weight: bold;
+            padding: 10px 0;
+        }
+        .content p {
+            font-size: 14px;
+            color: gray;
+        }
+        .button {
             text-align: center;
-            border: 2px solid blue; /* Add a blue border */
+        }
+        .button button {
+            padding: 12px 24px;
+            border-radius: 20px;
+            border: none;
+            color: blue;
+            background-color: lightblue;
+            margin-top: 14px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: semi-bold;
+
         }
     </style>
 </head>
 <body>
     <div class="card">
-        <img src="image.png" alt="Lake Image" class="card-image">
-        <div class="card-tags">
-            <span class="tag">Nature</span>
-            <span class="tag">Lake</span>
+        <div class="image">
+            <img src="image.png" alt="lake" width="324" height="190">
         </div>
-        <h2 class="card-location">Lake Name</h2>
-        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc id aliquet aliquam, nisl nunc ultrices nunc, nec lacinia metus nisl id nunc.</p>
-        <a href="#" class="read-more">Read More</a>
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="content">
+            <h1>
+                Lorem, ipsum.
+            </h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis hic eaque quod cumque quas iste placeat voluptate, quaerat itaque? Quibusdam nemo voluptatem quis voluptate accusantium est minima sunt blanditiis labore.
+            </p>
+            <div class="button">
+                <button>Read More</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
