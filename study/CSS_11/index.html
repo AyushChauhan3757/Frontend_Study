@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .hidden {
+            overflow: hidden;
+            height: 100px;
+            width: 200px;
+        }
+
+        .scroll {
+            overflow: scroll;
+            height: 100px;
+            width: 200px;
+        }
+
+        .auto {
+            overflow: auto;
+            height: 100px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hidden">
+        <p>This is an example of hidden overflow. If the content exceeds the dimensions of the container, it will be clipped and not visible.</p>
+    </div>
+
+    <div class="scroll">
+        <p>This is an example of scroll overflow. If the content exceeds the dimensions of the container, a scrollbar will appear to allow scrolling.</p>
+    </div>
+
+    <div class="auto">
+        <p>This is an example of auto overflow. If the content exceeds the dimensions of the container, a scrollbar will appear only if necessary.</p>
+    </div>
+</body>
+</html>
