@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-size: 16px;
+        }
+
+        .container {
+            width: 100%;
+            height: 400px;
+            background-color: lightgray;
+            margin-bottom: 20px;
+        }
+
+        /* Fixed Size - px stands for pixel */
+        .fixed-size {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            margin-bottom: 20px;
+        }
+
+        /* Percentage Size - changes according to the screen size */
+        .percentage-size {
+            width: 50%;
+            height: 50%;
+            background-color: lightgreen;
+            margin-bottom: 20px;
+        }
+
+        /* Viewport Size (vm, vh) - viewport is the area of the browser where the web content can be seen */
+        .viewport-size {
+            width: 100vw;
+            height: 100vh;
+            background-color: lightpink;
+            margin-bottom: 20px;
+        }
+
+        /* Em Size - em is equal to current font size lets say font size is set to 19px then 1em = 19px */
+        .em-size {
+            width: 10em;
+            height: 10em;
+            background-color: lightyellow;
+            margin-bottom: 20px;
+        }
+
+        /* Rem Size  - rem is qual to default font size that is 16px */
+        .rem-size {
+            width: 5rem;
+            height: 5rem;
+            background-color: lightcoral;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">Container (100% width, 400px height)</div>
+    <div class="fixed-size">Fixed Size (200px width, 200px height)</div>
+    <div class="percentage-size">Percentage Size (50% width, 50% height)</div>
+    <div class="viewport-size">Viewport Size (100vw width, 100vh height)</div>
+    <div class="em-size">Em Size (10em width, 10em height)</div>
+    <div class="rem-size">Rem Size (5rem width, 5rem height)</div>
+</body>
+</html>
