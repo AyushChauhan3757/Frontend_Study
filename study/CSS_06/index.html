@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade Algorithm</title>
+    <style>
+        /* Importance */
+        h1 {
+            color: red !important;
+        }
+
+        /* Specificity */
+        #myDiv {
+            background-color: blue;
+        }
+
+        .myClass {
+            background-color: green;
+        }
+
+        /* Source Order */
+        body {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<!--
+The Cascade is a fundamental algorithm in CSS (Cascading Style Sheets) that determines how to apply styles to an element based on multiple style rules. It resolves conflicts between different CSS rules that apply to the same element. The Cascade follows a series of steps to decide which styles are applied to an element, based on three main factors: importance, specificity, and source order.
+
+Importance: CSS allows styles to be marked as !important, which overrides any other declaration. However, using !important is generally discouraged except in specific situations because it makes debugging and maintaining CSS harder.
+
+Specificity: Each selector has a specificity weight, and the rule with the higher specificity applies. Specificity is calculated based on the number of ID selectors, class selectors, attribute selectors, and element (type) selectors in the rule. In general:
+
+    ID selectors have the highest specificity.
+    Class, pseudo-class, and attribute selectors come next.
+    Element (type) selectors and pseudo-elements have the lowest specificity.
+    Inline styles added directly to an element's style attribute have a higher specificity than any selector.
+    Source Order: If two rules have the same importance and specificity, the last rule defined in the CSS is applied. When multiple stylesheets are linked, the styles in the last stylesheet linked will override those in the first, given all other factors are equal.
+
+The Cascade ensures that the most specific and relevant styles are applied to an element, allowing for a flexible and powerful styling mechanism that can handle complex styling scenarios in web development.
+-->
+
+    <h1>This is h1 with Importance</h1>
+    <div id="myDiv" class="myClass">
+        <p>This is a paragraph inside a div.</p>
+    </div>
+    <div class="myClass">
+        <p>This is another paragraph inside a div without the id.</p>
+    </div>
+    <p>This is a paragraph outside the div.</p>
+</body>
+</html>
