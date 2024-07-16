@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Queries Example</title>
+    <style>
+        /* Default styles */
+        body {
+            background-color: white;
+            color: black;
+        }
+
+        /* Media query for screens smaller than 600px */
+        @media (max-width: 600px) {
+            body {
+                background-color: lightblue;
+                color: white;
+            }
+        }
+
+        /* Media query for screens between 601px and 900px */
+        @media (min-width: 601px) and (max-width: 900px) {
+            body {
+                background-color: lightgreen;
+                color: black;
+            }
+        }
+
+        /* Media query for screens larger than 900px */
+        @media (min-width: 901px) {
+            body {
+                background-color: lightyellow;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Queries Example</h1>
+    <p>This is an example of using media queries in CSS to apply different styles based on the screen size.</p>
+</body>
+</html>
