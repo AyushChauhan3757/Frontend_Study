@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Change the font family for all elements */
+        }
+
+        .card {
+            border: 2px solid #333; /* Increase the border width and make it darker */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            border-radius: 5px; /* Make the border more square */
+        }
+
+        .card-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px; /* Make the border more square */
+        }
+
+        .card-tags {
+            margin-top: 10px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: transparent;
+            color: #333;
+            padding: 5px 10px;
+            margin-right: 5px;
+            border-radius: 10px;
+            border: 2px solid gray;
+        }
+
+        .card-location {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .card-description {
+            margin-top: 10px;
+        }
+
+        .read-more {
+            display: block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #f2f2f2;
+            color: blue;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            border: 2px solid blue; /* Add a blue border */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="image.png" alt="Lake Image" class="card-image">
+        <div class="card-tags">
+            <span class="tag">Nature</span>
+            <span class="tag">Lake</span>
+        </div>
+        <h2 class="card-location">Lake Name</h2>
+        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc id aliquet aliquam, nisl nunc ultrices nunc, nec lacinia metus nisl id nunc.</p>
+        <a href="#" class="read-more">Read More</a>
+    </div>
+</body>
+</html>
