@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transition Property</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: width 2s, height 2s, background-color 2s;
+        }
+
+        .box:hover {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        .fade {
+            opacity: 1;
+            transition: opacity 2s;
+        }
+
+        .fade:hover {
+            opacity: 0;
+        }
+
+        .slide {
+            position: relative;
+            left: 0;
+            transition: left 2s;
+        }
+
+        .slide:hover {
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="fade">Fade In/Out</div>
+    <div class="slide">Slide</div>
+</body>
+</html>
