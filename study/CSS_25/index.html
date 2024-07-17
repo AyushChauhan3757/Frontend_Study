@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zig Zag Bouncing Ball</title>
+    <style>
+        .box {
+            width: 850px;
+            height: 250px;
+            border: 1px solid black;
+            position: relative;
+            background-color: aqua;
+        }
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            border-radius: 50%;
+            animation: bounce 2s linear infinite;
+        }
+
+        @keyframes bounce {
+            0% {
+                top: 0;
+                left: 0;
+            }
+            25% {
+                top: 200px;
+                left: 200px;
+            }
+            50% {
+                top: 0;
+                left: 400px;
+            }
+            75% {
+                top: 200px;
+                left: 600px;
+            }
+            100% {
+                top: 0;
+                left: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
