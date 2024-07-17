@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            /* Set the display property to grid to create a grid container */
+            display: grid;
+            
+            /* Define the number and size of columns in the grid */
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            /* Define the number and size of rows in the grid */
+            grid-template-rows: 100px 200px;
+            
+            /* Set the gap between grid items */
+            grid-gap: 10px;
+            
+            /* Define the flow of grid items */
+            grid-auto-flow: row;
+            
+            /* Align grid items horizontally within the grid cells */
+            justify-items: center;
+            
+            /* Align grid items vertically within the grid cells */
+            align-items: center;
+        }
+
+        .item {
+            /* Set the background color of grid items */
+            background-color: lightblue;
+            
+            /* Set the padding around grid items */
+            padding: 20px;
+            
+            /* Center the text within grid items */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+</body>
+</html>
