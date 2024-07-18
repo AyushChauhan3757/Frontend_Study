@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Data Types, Variables, and Objects</title>
+</head>
+<body>
+    <script>
+        // JavaScript Data Types
+        var number = 10; // Number
+        var string = "Hello"; // String
+        var boolean = true; // Boolean
+        var array = [1, 2, 3]; // Array
+        var object = { name: "John", age: 25 }; // Object
+        var nullValue = null; // Null
+        var undefinedValue = undefined; // Undefined
+
+        // Variables
+        var x = 5;
+        let y = 10; // 'let' is block-scoped
+        var sum = x + y;
+
+        // Objects
+        var person = {
+            name: "John",
+            age: 25,
+            address: {
+                street: "123 Main St",
+                city: "New York",
+                state: "NY"
+            }
+        };
+
+        // Accessing object properties
+        var personName = person.name;
+        var personAge = person.age;
+        var personCity = person.address.city;
+
+        // Output
+        console.log(number);
+        console.log(string);
+        console.log(boolean);
+        console.log(array);
+        console.log(object);
+        console.log(nullValue);
+        console.log(undefinedValue);
+
+        console.log(sum);
+
+        console.log(personName);
+        console.log(personAge);
+        console.log(personCity);
+    </script>
+</body>
+</html>
