@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Business Name Generator</title>
+    <script>
+        function generateBusinessName() {
+            var adjectives = ["Crazy", "Amazing", "Fire"];
+            var shopNames = ["Engine", "Foods", "Garments"];
+            var anotherWord = ["Bros", "Limited", "Hub"];
+
+            var randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+            var randomShopName = shopNames[Math.floor(Math.random() * shopNames.length)];
+            var randomAnotherWord = anotherWord[Math.floor(Math.random() * anotherWord.length)];
+
+            var businessName = randomAdjective + " " + randomShopName + " " + randomAnotherWord;
+            document.getElementById("businessName").innerHTML = businessName;
+        }
+    </script>
+</head>
+<body>
+    <h1>Business Name Generator</h1>
+    <button onclick="generateBusinessName()">Generate</button>
+    <p id="businessName"></p>
+</body>
+</html>
