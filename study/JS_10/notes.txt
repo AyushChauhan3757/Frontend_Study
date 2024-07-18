@@ -1,0 +1,20 @@
+JavaScript Document Object Model (DOM)
+
+The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the structure of a web page as a tree-like structure, where each element in the document is represented as a node.
+
+Key Concepts:
+- Document: The entry point to the web page, representing the entire HTML document.
+- Element: Represents an HTML element, such as <div>, <p>, <h1>, etc.
+- Node: The basic building block of the DOM tree, representing an element, attribute, or text.
+- Parent and Child Nodes: Nodes can have parent and child nodes, forming a hierarchical structure.
+- Attributes: Properties of an element, such as id, class, src, etc.
+- Methods: Actions that can be performed on nodes, such as adding, removing, or modifying elements.
+
+DOM Manipulation:
+JavaScript can be used to manipulate the DOM, allowing dynamic changes to the web page. Some common DOM manipulation tasks include:
+- Accessing Elements: Using methods like getElementById(), getElementsByClassName(), etc.
+- Modifying Elements: Changing element properties, such as innerHTML, className, etc.
+- Creating and Removing Elements: Creating new elements with createElement(), and removing elements with removeChild().
+- Event Handling: Attaching event listeners to elements to respond to user interactions.
+
+Overall, the DOM provides a powerful way to interact with and manipulate web pages using JavaScript. Understanding the DOM is essential for building dynamic and interactive web applications.
