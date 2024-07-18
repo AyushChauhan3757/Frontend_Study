@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Strings</title>
+</head>
+<body>
+    <script>
+        // String functions in JavaScript
+
+        // Length of a string
+        var str = "Hello, World!";
+        var length = str.length;
+        console.log("Length of the string: " + length);
+
+        // Accessing characters in a string
+        var char = str.charAt(0);
+        console.log("Character at index 0: " + char);
+
+        // Concatenating strings
+        var str1 = "Hello";
+        var str2 = "World";
+        var result = str1.concat(", ", str2);
+        console.log("Concatenated string: " + result);
+
+        // Converting to uppercase
+        var uppercase = str.toUpperCase();
+        console.log("Uppercase string: " + uppercase);
+
+        // Converting to lowercase
+        var lowercase = str.toLowerCase();
+        console.log("Lowercase string: " + lowercase);
+
+        // Finding a substring
+        var substring = str.substring(0, 5);
+        console.log("Substring: " + substring);
+
+        // Splitting a string
+        var split = str.split(",");
+        console.log("Split string: " + split);
+
+        // Replacing a substring
+        var replaced = str.replace("World", "Universe");
+        console.log("Replaced string: " + replaced);
+    </script> 
+</body>
+</html>
