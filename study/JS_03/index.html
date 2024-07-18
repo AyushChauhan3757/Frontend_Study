@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Loops</title>
+</head>
+<body>
+    <script>
+        // Example of a for loop
+        for (let i = 0; i < 5; i++) {
+            console.log(i);
+        }
+
+        // Example of a for...in loop
+        const obj = { a: 1, b: 2, c: 3 };
+        for (let key in obj) {
+            console.log(key, obj[key]);
+        }
+
+        // Example of a for...of loop
+        const arr = [1, 2, 3, 4, 5];
+        for (let element of arr) {
+            console.log(element);
+        }
+
+        // Example of a while loop
+        let i = 0;
+        while (i < 5) {
+            console.log(i);
+            i++;
+        }
+
+        // Example of a do...while loop
+        let j = 0;
+        do {
+            console.log(j);
+            j++;
+        } while (j < 5);
+    </script>
+</body>
+</html>
