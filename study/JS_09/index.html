@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <script>
+    // Define a constant variable named 'number' and assign it a value of 5
+    const number = 5;
+
+    // Calculate the factorial of the 'number' using the Array.from() method and the reduce() method
+    const factorial = Array.from({ length: number }, (_, index) => index + 1)
+        .reduce((acc, curr) => acc * curr, 1);
+
+    // Output the factorial value to the console
+    console.log(factorial);
+    </script>
+</body>
+</html>
