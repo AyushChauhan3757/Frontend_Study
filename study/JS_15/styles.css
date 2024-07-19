@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#youtube-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.youtube-card {
+    display: flex;
+    width: 600px;
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.youtube-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.youtube-card .thumbnail {
+    position: relative;
+    width: 40%;
+    max-width: 160px;
+}
+
+.youtube-card .thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.youtube-card .thumbnail .duration {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 4px 6px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.youtube-card .details {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.youtube-card .details .title {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 8px;
+    line-height: 1.4;
+}
+
+.youtube-card .details .channel,
+.youtube-card .details .views,
+.youtube-card .details .months-old {
+    font-size: 14px;
+    color: #606060;
+    margin: 0;
+}
+
+.youtube-card .details .info {
+    display: flex;
+    gap: 10px;
+}
+
+.youtube-card .details .info p {
+    margin: 0;
+}
