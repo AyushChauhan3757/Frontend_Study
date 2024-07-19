@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion and Removal using JS</title>
+</head>
+<body>
+    <div id="myElement">Hello, World!</div>
+
+    <script>
+        const element = document.getElementById("myElement");
+
+        // innerHTML: Gets or sets the HTML content inside the element
+        console.log("innerHTML:", element.innerHTML);
+
+        // outerHTML: Gets or sets the HTML content including the element itself
+        console.log("outerHTML:", element.outerHTML);
+
+        // tagName: Gets the name of the element's tag
+        console.log("tagName:", element.tagName);
+
+        // nodeName: Gets the name of the node (same as tagName for elements)
+        console.log("nodeName:", element.nodeName);
+
+        // textContent: Gets or sets the text content of the element
+        console.log("textContent:", element.textContent);
+
+        // hidden: Gets or sets the visibility of the element
+        console.log("hidden:", element.hidden);
+
+        // hasAttribute: Checks if the element has a specific attribute
+        console.log("hasAttribute('id'):", element.hasAttribute('id'));
+
+        // getAttribute: Gets the value of a specific attribute
+        console.log("getAttribute('id'):", element.getAttribute('id'));
+
+        // setAttribute: Sets the value of a specific attribute
+        element.setAttribute('class', 'myClass');
+        console.log("setAttribute('class', 'myClass')");
+
+        // removeAttribute: Removes a specific attribute from the element
+        element.removeAttribute('class');
+        console.log("removeAttribute('class')");
+
+        // attribute: Gets or sets the value of a specific attribute
+        console.log("attribute('id'):", element.getAttribute('id'));
+        element.setAttribute('id', 'newId');
+        console.log("attribute('id', 'newId')");
+
+        // insertAdjacentHTML: Inserts the specified content in relation to the element
+        element.insertAdjacentHTML("beforebegin", "<p>This is BeforeBegin.</p>");
+        element.insertAdjacentHTML("afterbegin", "<p>This is AfterBegin.</p>");
+        element.insertAdjacentHTML("beforeend", "<p>This is BeforeEnd.</p>");
+        element.insertAdjacentHTML("afterend", "<p>This is AfterEnd.</p>");
+
+        // append: Inserts content as the last child of the element
+        const newElement = document.createElement('p');
+        newElement.textContent = 'Appended content';
+        element.append(newElement);
+        console.log("append:", element.innerHTML);
+
+        // prepend: Inserts content as the first child of the element
+        const newElement2 = document.createElement('p');
+        newElement2.textContent = 'Prepended content';
+        element.prepend(newElement2);
+        console.log("prepend:", element.innerHTML);
+
+        const newElement3 = document.createElement('p');
+        newElement3.textContent = 'Content before';
+        element.before(newElement3);
+        console.log("before:", element.parentNode.innerHTML);
+
+        // after: Inserts content after the element
+        const newElement4 = document.createElement('p');
+        newElement4.textContent = 'Content after';
+        element.after(newElement4);
+        console.log("after:", element.parentNode.innerHTML);
+
+        // replaceWith: Replaces the element with the specified content
+        const newElement5 = document.createElement('p');
+        newElement5.textContent = 'Replaced content';
+        element.replaceWith(newElement5);
+        console.log("replaceWith:", newElement5.parentNode.innerHTML);
+
+        // remove: Removes the element from the DOM
+        element.remove();
+        console.log("remove:", element.parentNode.innerHTML);
+
+        // removeChild: Removes a specific child node from the element
+        const childNode = element.firstChild;
+        element.removeChild(childNode);
+        console.log("removeChild:", element.innerHTML);
+
+        // parentNode.removeChild: Removes the element from its parent node
+        element.parentNode.removeChild(element);
+        console.log("parentNode.removeChild:", element.parentNode.innerHTML);
+    </script>
+</body>
+</html> 
