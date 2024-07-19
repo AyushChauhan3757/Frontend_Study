@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            Click me!
+        </div>
+    </div>
+
+    <script>
+        // Event handling
+        const childElement = document.getElementById('child');
+        childElement.addEventListener('click', function() {
+            console.log('Child element clicked!');
+        });
+
+        // Event bubbling
+        const parentElement = document.getElementById('parent');
+        parentElement.addEventListener('click', function() {
+            console.log('Parent element clicked!');
+        });
+
+        // setInterval
+        setInterval(function() {
+            console.log('This message will be logged every 1 second.');
+        }, 1000);
+
+        // setTimeout
+        setTimeout(function() {
+            console.log('This message will be logged after 3 seconds.');
+        }, 3000);
+    </script>
+</body>
+</html>
