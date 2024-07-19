@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Callbacks & Promises</title>
+</head>
+<body>
+    <h1>JavaScript Callbacks & Promises</h1>
+
+    <script>
+        // Example of a callback function
+        function fetchData(callback) {
+            setTimeout(() => {
+                const data = 'Hello, world!';
+                callback(data);
+            }, 2000);
+        }
+
+        function displayData(data) {
+            console.log(data);
+        }
+
+        fetchData(displayData);
+
+        // Example of a promise
+        function fetchDataPromise() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    const data = 'Hello, world!';
+                    resolve(data);
+                }, 2000);
+            });
+        }
+
+        fetchDataPromise()
+            .then(data => {
+                console.log(data);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+</body>
+</html>
